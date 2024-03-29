@@ -1,28 +1,42 @@
-import { ErrorMessage, StyledInput } from "./AppInput.styled";
+import React from "react";
+import "./AppInput.css";
 
 interface IAppInput {
-  inputType: string;
-  inputPlaceholder: string;
-  errorMessage?: string;
-  isError?: boolean;
+  type: string;
+  label: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: () => void;
+  error: boolean;
+  errorMessage: string;
+  placeholder?: string;
+  required?: boolean;
 }
 
-export const AppInput = ({
-  inputType,
-  inputPlaceholder,
+export const AppInput: React.FC<IAppInput> = ({
+  type,
+  label,
+  value,
+  onChange,
+  onBlur,
+  error,
   errorMessage,
-  isError,
-  ...props
-}: IAppInput) => {
+  placeholder,
+  required,
+}) => {
   return (
-    <>
-      <StyledInput
-        type={inputType}
-        placeholder={inputPlaceholder}
-        $isError={isError || false}
-        {...props}
+    <div className={`input-container ${error ? "error" : ""}`}>
+      <label>{label}:</label>
+      <input
+        type={type}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+        placeholder={placeholder}
+        required={required}
+        className={error ? "error" : ""}
       />
-      <ErrorMessage>{errorMessage}</ErrorMessage>
-    </>
+      {error && <span className="error-message">{errorMessage}</span>}
+    </div>
   );
 };

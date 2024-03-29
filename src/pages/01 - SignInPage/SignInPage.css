@@ -1,0 +1,51 @@
+.login-form {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #222; /* Dark background color */
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1); /* Light shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff; /* White text color */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-form button:focus {
+  outline: none;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #ddd; /* Light gray text color */
+}
+
+.footer a {
+  color: #ddd; /* Light gray link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #007bff; /* Blue link color on hover */
+}
