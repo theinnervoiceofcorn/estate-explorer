@@ -1,9 +1,7 @@
-import { SCMainPage } from "./MainPage.styled";
+import "./MainPage.scss";
 
 export const MainPage = () => {
   return (
-    <SCMainPage>
-      <h1>Main</h1>
-    </SCMainPage>
+    <h1>Main</h1>
   );
 };

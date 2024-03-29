@@ -1,9 +1,7 @@
-import { SCProfilePage } from "./ProfilePage.styled";
+import "./ProfilePage.scss";
 
 export const ProfilePage = () => {
   return (
-    <SCProfilePage>
-      <h1>Profile</h1>
-    </SCProfilePage>
+    <h1>Profile</h1>
   );
 };

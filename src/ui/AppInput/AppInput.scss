@@ -1,0 +1,46 @@
+.input-container {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: var(--ft_pr);
+    transition: color 0.3s ease;
+  }
+
+  input {
+    width: 100%;
+    padding: 12.5px;
+    border: 1px solid var(--ft-br);
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: var(--dark-bgc);
+    color: var(--ft_pr);
+    transition: border-color 0.3s ease, background-color 0.3s ease,
+      color 0.3s ease;
+  }
+  input:focus {
+    border-color: var(--ft_pr);
+    background-color: var(--bgc);
+    outline: none;
+  }
+
+  .error-message {
+    color: var(--error);
+    font-size: 16px;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+  }
+
+  input.error {
+    border-color: var(--error);
+  }
+  input::placeholder {
+    color: var(--ft-darker);
+    transition: color 0.3s ease;
+  }
+  input:focus::placeholder {
+    color: var(--ft-dark);
+  }
+}

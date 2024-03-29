@@ -1,8 +1,8 @@
 import React from "react";
-import "./AppInput.css";
+import "./AppInput.scss";
 
 interface IAppInput {
-  type: string;
+  type?: string;
   label: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -22,7 +22,6 @@ export const AppInput: React.FC<IAppInput> = ({
   error,
   errorMessage,
   placeholder,
-  required,
 }) => {
   return (
     <div className={`input-container ${error ? "error" : ""}`}>
@@ -33,7 +32,6 @@ export const AppInput: React.FC<IAppInput> = ({
         onChange={onChange}
         onBlur={onBlur}
         placeholder={placeholder}
-        required={required}
         className={error ? "error" : ""}
       />
       {error && <span className="error-message">{errorMessage}</span>}

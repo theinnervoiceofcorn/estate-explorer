@@ -1,9 +1,7 @@
-import { SCPropertiesPage } from "./ProppertiesPage.styled";
+import "./ProppertiesPage.scss";
 
 export const PropertiesPage = () => {
   return (
-    <SCPropertiesPage>
-      <h1>Properties</h1>
-    </SCPropertiesPage>
+    <h1>Properties</h1>
   );
 };

@@ -1,9 +1,7 @@
-import { SCFavoritesPage } from "./FavoritesPage.styed";
+import "./FavoritesPage.scss";
 
 export const FavoritesPage = () => {
   return (
-    <SCFavoritesPage>
-      <h1>Favorites</h1>
-    </SCFavoritesPage>
+    <h1>Favorites</h1>
   );
 };
