@@ -1,0 +1,26 @@
+.forms-transitions-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+
+  span,
+  a {
+    font-weight: 400;
+  }
+
+  a,
+  &:active,
+  &:visited {
+    color: var(--ft_pr);
+
+    &:hover,
+    &:focus {
+      color: var(--success);
+      transition: 0.3s;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

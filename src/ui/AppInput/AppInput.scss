@@ -1,5 +1,5 @@
 .input-container {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   label {
     display: block;
@@ -14,7 +14,8 @@
     padding: 12.5px;
     border: 1px solid var(--ft-br);
     border-radius: 5px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 16px;
     background-color: var(--dark-bgc);
     color: var(--ft_pr);
     transition: border-color 0.3s ease, background-color 0.3s ease,
@@ -29,7 +30,7 @@
   .error-message {
     color: var(--error);
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 10px;
     transition: color 0.3s ease;
   }
 

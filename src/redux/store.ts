@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./slices/counterSlice";
+import { bayutAPI } from "./api/bayutAPI";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    [bayutAPI.reducerPath]: bayutAPI.reducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(bayutAPI.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
+  padding: 20px 0;
+  background-color: var(--bgc);
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+        list-style: none;
+      }
+
+      a {
+        color: var(--ft_pr);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  hr {
+    color: var(--ft_pr);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -7,10 +7,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { SignInPage } from "./pages/01 - SignInPage/SignInPage";
 import { SignUpPage } from "./pages/02 - SignUpPage/SIgnUpPage";
 import { MainPage } from "./pages/03 - MainPage/MainPage";
-import { PropertiesPage } from "./pages/04- PropertiesPage/PropertiesPage";
-import { PropertyPage } from "./pages/05 - PropertyPage/PropertyPage";
-import { ProfilePage } from "./pages/06 - ProfilePage/ProfilePage";
-import { FavoritesPage } from "./pages/07 - FavoritesPage/FavoritesPage";
+import { PropertyPage } from "./pages/04 - PropertyPage/PropertyPage";
+import { ProfilePage } from "./pages/05 - ProfilePage/ProfilePage";
+import { FavoritesPage } from "./pages/06 - FavoritesPage/FavoritesPage";
 
 const router = createBrowserRouter([
   {
@@ -26,11 +25,7 @@ const router = createBrowserRouter([
     element: <MainPage />,
   },
   {
-    path: "/properties",
-    element: <PropertiesPage />,
-  },
-  {
-    path: "/property",
+    path: "/main/:id",
     element: <PropertyPage />,
   },
   {

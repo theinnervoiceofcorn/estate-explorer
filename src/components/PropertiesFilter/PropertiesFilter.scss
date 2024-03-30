@@ -1,0 +1,73 @@
+/* PropertiesFilter.css */
+
+.sidebar {
+    background-color: var(--bgc); /* Dark background color */
+    color: var(--ft_pr); /* Light text color */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow for depth */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+  
+  .filter-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-heading {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Larger heading size */
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .filter-radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-radio-label {
+    margin-right: 20px;
+  }
+  
+  .filter-radio {
+    margin-right: 5px;
+  }
+  
+  .filter-input, .filter-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444; /* Darker border color */
+    background-color: var(--dark-bgc); /* Darker background color */
+    color: var(--ft_pr); /* Light text color */
+    margin-right: 10px;
+    width: 80px;
+  }
+  
+  .filter-checkbox {
+    margin-right: 5px;
+  }
+  
+  .filter-submit-button {
+    background-color: var(--success); /* Green Button color */
+    color: inherit; /* Button text color */
+    font-family: inherit;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  .filter-submit-button:hover {
+    background-color: var(--success-dr); /* Green Button color on hover */
+  }

@@ -1,0 +1,53 @@
+header {
+  width: 100vw;
+  padding: 20px 120px;
+  background-color: var(--bgc);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      span {
+        font-size: 24px;
+        margin-top: 4px;
+      }
+
+      .logoImg {
+        width: 30px;
+        height: auto;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+
+      a {
+        color: var(--ft_pr);
+        cursor: pointer;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:visited {
+          color: var(--ft_pr);
+        }
+        &:hover {
+          color: var(--success);
+          border-bottom: 3px solid var(--success);
+          transition: 0.1s;
+        }
+      }
+    }
+  }
+}

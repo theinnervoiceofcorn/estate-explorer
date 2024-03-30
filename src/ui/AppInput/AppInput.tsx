@@ -2,8 +2,11 @@ import React from "react";
 import "./AppInput.scss";
 
 interface IAppInput {
+  name?: string;
+  inputId?: string;
   type?: string;
   label: string;
+  labelFor?: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: () => void;
@@ -14,8 +17,11 @@ interface IAppInput {
 }
 
 export const AppInput: React.FC<IAppInput> = ({
+  name,
+  inputId,
   type,
   label,
+  labelFor,
   value,
   onChange,
   onBlur,
@@ -25,8 +31,10 @@ export const AppInput: React.FC<IAppInput> = ({
 }) => {
   return (
     <div className={`input-container ${error ? "error" : ""}`}>
-      <label>{label}:</label>
+      <label htmlFor={labelFor}>{label}:</label>
       <input
+        name={name}
+        id={inputId}
         type={type}
         value={value}
         onChange={onChange}
